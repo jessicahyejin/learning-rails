@@ -1,4 +1,6 @@
 Microposts::Application.routes.draw do
+  root 'users#index'
+
   resources :posts
 
   resources :users

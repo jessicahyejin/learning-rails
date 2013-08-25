@@ -1,5 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<div>
+  <strong>Name:</strong>
+  <% if @post.user %>
+  <%= @post.user.name %>
+  <% end %>
+</div>
+
 <p>
   <strong>Body:</strong>
   <pre><%= @post.body %></pre>
